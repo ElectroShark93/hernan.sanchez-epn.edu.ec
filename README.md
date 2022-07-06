@@ -10,11 +10,20 @@ https://github.com/ElectroShark93/hernan.sanchez-epn.edu.ec.git
     * Al momento de correr el programa y no se ejecuta. 
 # Código del ProgressBar
 ````TypeScript
-public class Hola {
-    public static void main(String[] Args) {  
-
-        System.out.println("Hola Hernán"); 
-            
+public class App {
+    public static void main(String[] args) throws Exception, InterruptedException {
+        /**
+         * @author : Hernán Sánchez
+         * @version: 1
+         */
+        
+        String nombre = "hernan.sanchez@epn.edu.ec";
+        System.out.println("\n");
+        for (int i = 0; i <= nombre.length(); i++) {
+            System.out.println(" \t"+i);
+            ProgressBar.showProgressBar_e(nombre,"\\/-o");
+        }
+        
     }
 }
 ````

@@ -9,10 +9,6 @@ public class App {
         
         String nombre = "hernan.sanchez@epn.edu.ec";
         System.out.println("\n");
-        for (int i = 0; i <= nombre.length(); i++) {
-            System.out.println(" \t"+i);
-            ProgressBar.showProgressBar_e(nombre,"\\/-o");
-        }
-        
+        ProgressBar.showProgressBar_e(nombre,"\\/-o");        
     }
 }

@@ -11,9 +11,9 @@ public class ProgressBar {
     public static void showProgressBar_e(String nombre,String c) throws IOException, InterruptedException{
         int TamBar = 30;
         String sb = new String();
-        for (int i = 0; i <= nombre.length(); i++) {
-        for (int procentaje = 0; procentaje <= 100; procentaje++) {
-                procentaje+=4;            
+        
+            for (int procentaje = 0; procentaje <= 100; procentaje++) {
+                procentaje+=3;            
                 int nroCaracteres = procentaje * TamBar / 100;  //numero de caracteres
                 sb =  "\r [";
                 for (int k = 0; k <= TamBar; k++){
@@ -23,10 +23,12 @@ public class ProgressBar {
                 
                 System.out.write(sb.getBytes());
                 System.out.printf(" %d %%", procentaje,nombre.length());
+                for (int i = 0; i <= nombre.length(); i++) {
+                
                 System.out.println("\t Loading: " + i + " de 25 \t " + nombre.charAt(i++) );
             }
             
-            Thread.sleep(1000);
+            Thread.sleep(300);
             
         }
         
