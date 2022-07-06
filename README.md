@@ -1,6 +1,6 @@
 ## 1er Examen Bimestral
 # Link Github
-
+https://github.com/ElectroShark93/hernan.sanchez-epn.edu.ec.git
 # Preguntas
 1. Donde se produciria un Issue:
     * Defectos que tiene el codigo en general.
